@@ -1,0 +1,12 @@
+population, population2010 = input().split()
+population, population2010 = int(population), int(population2010)
+familyNum, familyTotal, familyAverageNum2010 = input().split()
+familyNum, familyTotal, familyAverageNum2010 = int(familyNum), int(familyTotal), float(familyAverageNum2010)
+population0To14, population15To59, population60 = input().split()
+population0To14, population15To59, population60 = int(population0To14), int(population15To59), int(population60)
+populationGraduated = int(input())
+
+print("{} {:.2%} {:.2%}".format(population- population2010, (population - population2010) / population2010, (population - population2010) / population2010 / 10))
+print("{:.2f} {:.2f}".format(familyTotal / familyNum, familyAverageNum2010 - familyTotal / familyNum))
+print("{:.2%} {:.2%} {:.2%}".format(population0To14 / population, population15To59 / population, population60 / population))
+print("{:.2%}".format(populationGraduated / population))

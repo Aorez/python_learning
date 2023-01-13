@@ -1,0 +1,1 @@
+print("fahr = 150, celsius = 65")
